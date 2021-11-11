@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100%;
+}
+.conteiner{
+    width: 100%;
+    max-width: 1200px;
+}
+.header_inner{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px grey, -0.2em 0 .3em gray;
+    margin-bottom: 10px;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.top a{
+    color: crimson;
+}
+.logo_top a{
+    font-size: 40px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+.menu_top a{
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+a:hover{
+    border-bottom: 2px solid black;
+    transition: 0.06s;
+}
+.text_header{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    padding: 100px 0;
+}
+.text_header h1{
+    font-size: 55px;
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+}
+.text_header p{
+    font-size: 25px;
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+}
+span{
+    color: crimson;
+}
+.header_knopka{
+    width: 100%;
+    height: 30%;
+    margin-top: 60px;
+}
+.knopka{
+    border: 2px solid black;
+    color: black;
+    padding: 20px 60px;
+    background-color: brown;
+    box-shadow: 3px 2px 2px grey;
+}
+.knopka:hover{
+    transition: 0.5s;
+    background-image: url(https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds/100px-wide-no-height-or-ratio-contain.png);
+    color: chartreuse;
+    box-shadow: 6px 4px 4px tomato;
+}
+.main{
+    width: 100%;
+    height: auto;
+}
+.main_inner{
+    border-top: 2px solid black;
+    border-radius: 20px;
+    width: 100%;
+    background-color: lightcyan;
+    display: flex;
+    box-shadow: 3px 2px 2px grey, -0.2em 0 .3em gray;
+}
+.sidebar{
+    margin-right: 0;
+    border-radius: 19px;
+    border: 1px solid black;
+    width: 16%;
+    height: auto;
+    background-color: beige;
+    padding-top: 10px;
+    padding-bottom: 300px;
+}
+.sidebar div{
+    width: 80%;
+    border-bottom: 2px solid black;
+    text-align: end;
+    margin-top: 30px;
+}
+.content{
+    width: 90%;
+    height: auto;;
+    padding: 60px;
+}
+.info{
+    width: 60%;
+    height: 40%;
+    background-color: darkslategray;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10% 8%;
+}
+.knopka2{
+    border: 2px solid black;
+    color: black;
+    padding: 5% 15%;
+    background-color: gainsboro;
+    box-shadow: 3px 2px 2px grey;
+    opacity: 65%;
+}
+.knopka_2:hover{
+    transition: 0.5s;
+    background-image: url(https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds/100px-wide-no-height-or-ratio-contain.png);
+    color: chartreuse;
+    box-shadow: 6px 4px 4px tomato;
+}
+.knopka2:hover{
+    transition: 0.5s;
+    background-image: url(https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds/100px-wide-no-height-or-ratio-contain.png);
+    color: chartreuse;
+    box-shadow: 6px 4px 4px tomato;
+}
+input::before{
+    content: "";
+    height: 60px;
+    width: 60px;
+    background: url(./img/3OMo.gif);
+    position: fixed;
+    right: 20px;
+    top: 30px;
+    border-radius: 95%;
+    background-size: cover;
+}
+input{
+    position: absolute;
+    top: -100px;
+}
+input:checked + .global .header .header_inner{
+    background: url(./img/bg.jpg);
+    background-size: cover;
+}
+input:checked + .global .header .header_inner h1{
+    color: wheat;
+}
+input:checked + .global .header .header_inner p{
+    color: wheat;
+}
+input:checked + .global{
+    background-image: url(./img/5WWU.gif);
+    background-size: cover;
+}
+input:checked + .global .main .main_inner{
+    background: url(./img/bg2.jpg);
+    background-size: cover;
+}
+input:checked + .global .main .main_inner div{
+    opacity: 95%;
+}
+input:checked + .global .header .header_inner .top{
+    border-bottom: 1px solid whitesmoke;
+}
+input:checked + .global .main .main_inner .content .info{
+    background: url(./img/7FZr.gif);
+    background-size: cover;
+}
+input:checked + .global .main .main_inner .sidebar{
+    background-color: thistle;
+}
+body{
+    background: url(./img/bg3.jpg);
+}
